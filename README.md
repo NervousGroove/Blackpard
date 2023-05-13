@@ -1,6 +1,5 @@
 ![SpellSpike](https://img.shields.io/badge/Programming%20Language-SpellSpike-yellow)
 ![Wesley Y](https://img.shields.io/badge/Created%20by%20One%20Man-Started%20when%20I%20was%2014%20years%20old-blue)
-![Not open source](https://img.shields.io/badge/Not%20open%20source-But%20it%20is%20free%20for%20anyone%20to%20develop%20programs%20with%20SpellSpike%20from%20the%20SNLL%20license-green)
 ![Not open source](https://img.shields.io/badge/A%20100%25%20Brazilian%20language-But%20with%20English%20grammar%20and%20syntax-white)
 
 # 🐆 Blackpard
