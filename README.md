@@ -75,7 +75,7 @@ You can create a code, and after days or months, come back to edit that code, or
 @ Hello World
 ```
 
-## ⚡ Manipulating the GUI
+## ⚡ Manipulating the GUI (Still in testing)
 You can add elements to your app, after all everything is made up of elements. You can add inputs, buttons, images, text and more!
 Here is an example:
 ```python
@@ -90,24 +90,24 @@ BPDCreateText()
 mytext.prop(text = "Hello World", class = "test", group = "main")
 ```
 
-## ⚡ Editing Styles
+## ⚡ Editing Styles (Still in testing)
 Note that when creating elements, you can add the "class" property. This property binds a certain object as part of the style. For example, in the previous topic, the example shows a button with the "class" set to "test". For editing styles, Blackpard uses the "uilang" language, which is very similar to CSS.
 
-## ⚡ Sending mail
+## ⚡ Sending mail (Still in testing)
 In other languages, to send automated emails you need libraries, in Blackpard, this is a native tool. It's simple, just call the "BPDSendEmail" function and set the destination, subject and content. Here is an example:
 ```python
 BPDSendEmail()
 myemail.prop()
 ```
 
-## ⚡ Setting the Window Title
+## ⚡ Setting the Window Title (Still in testing)
 To customize your window title is easy, follow the example:
 ```python
 BPDSetWindowTitle()
 vlu("windowTitle", "Test")
 ```
 
-## ⚡ Manipulating Files
+## ⚡ Manipulating Files (Still in testing)
 Manipulating files doesn't have to be difficult, so Blackpard simplifies this process. Here's an example:
 ```python
 @ How to Open Files
@@ -118,10 +118,10 @@ BPDReadFile()
 myfile.read(setContentTo = "myVar", fileDir = "main.txt")
 ```
 
-## ⚡ Predefined Data
+## ⚡ Predefined Data (Still in testing)
 Predefined data is nothing more than privileged information about the user's hardware and software, such as: Date and Time, Hardware IDs (CPU and GPU), Average Connection Speed, and more. You can get this information easily, from variables that are updated every second, making data efficiently available, See:
 
-## ⚡ Conditions
+## ⚡ Conditions (Still in testing)
 Conditions are everything. Your app revolves around conditions, they are simple but can help you a lot. In Blackpard, you can create the famous conditions, using "is" and "else". Here are some examples:
 ```python
 is (fileDir = "test.exe") {
