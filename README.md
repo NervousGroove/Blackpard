@@ -21,8 +21,13 @@ SpellSpike is under the CC-NC-ND license. You must follow the standards of this 
 Blackpard is broad, and can be used for everything, and by everyone. Blackpard's tight-knit and active community makes everything easy, and makes it easy for beginners.
 
 # 📦 How to Install
-To install Blackpard is easy. Just go to "https://shre.ink/blackpard-dl" and wait for the .ZIP download and delete all files except "Blackpard.py" and "package.spike". After that you must configure the "package.spike" file by defining the name and author of the app, and the most important: define the main file of your project. You must edit the "inf_Main" variable in the "package.spike" file and set its value to the name of the main (.bpd) file of your project. After that you can start editing. YOU DO NOT, AND FURTHERMORE, CANNOT EDIT THE "Blackpard.py" file, because editing this file will prevent you from distributing your app because of the CC-NC-ND 4.0 license, and your app may stop working. EDIT ONLY THE ".bpd" FILE(S) OF YOUR PROJECT AND THE "package.spike" FILE, YOU CANNOT EDIT/MODIFY THE BLACKPARD SOURCE CODE, READ THE LICENSE. 
-
+To install Blackpard is easy. Just go to "https://shre.ink/blackpard-dl" and wait for the .ZIP download and delete all files except "Blackpard.py" and "package.spike". After that you must configure the "package.spike" file by defining the name and author of the app, and the most important: define the main file of your project. You must edit the "inf_Main" variable in the "package.spike" file and set its value to the name of the main (.bpd) file of your project. After that you can start editing. YOU DO NOT, AND FURTHERMORE, CANNOT EDIT THE "Blackpard.py" file, because editing this file will prevent you from distributing your app because of the CC-NC-ND 4.0 license, and your app may stop working. EDIT ONLY THE ".bpd" FILE(S) OF YOUR PROJECT AND THE "package.spike" FILE, YOU CANNOT EDIT/MODIFY THE BLACKPARD SOURCE CODE, READ THE LICENSE. You must also define the modules that you will use. In the file "onstart.cfg" you should list all modules you are going to use, separated by a comma. Here are the names of the modules:
+```python
+@ Math
+BPDMath()
+@ Audio
+play_audio(audio_name)
+```
 # 🚀 Documentation
 
 ## ⚡ How to create variables
