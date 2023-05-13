@@ -115,3 +115,22 @@ def execute_onstart_functions():
 
 
 execute_onstart_functions()
+
+with open(currentMainFile, "r") as f:
+    for line in f:
+        if "BPDOpenURL()" in line:
+            url = ""
+            for line in f:
+                if "vlu(" in line:
+                    if "setURL" in line:
+                        url = line.split('"')[3]
+                elif ")" in line:
+                    break
+            os.system(f"open {url}")
+
+with open(currentMainFile, "r") as f:
+    for line in f:
+        if "vlu(" in line:
+            name = line.split('"')[1]
+            value = line.split('"')[3]
+            exec(f"{name} = '{value}'")
