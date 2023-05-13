@@ -9,6 +9,15 @@ Blackpard is a high-level, cross-platform programming language developed to brin
 # ☕ Easy and Light
 Programming doesn't have to be difficult. That's why Blackpard makes everything simple and better, creating a new language concept. Blackpard is modern, fast, light, safe and extremely easy, perfect for everything.
 
+# 💸 Donate today! Help this project stay alive
+You can help/support this project/repository and help SwankyNoob maintain this and all other amazing projects of our developer, with any amount of ETH! The existence of this project depends on you, donate today! No matter the amount, every donation helps a lot! OUR ADDRESS TO RECEIVE ETHEREUM (METAMASK):
+```text
+0x17352A0e682dAFa233C83f15C902C86Ba7EB5B65
+```
+
+#  ⚖️ License
+SpellSpike is under the CC-NC-ND license. You must follow the standards of this license. Remember that this license is valid only for SpellSpike source code, you can feel free to distribute your programs created with SpellSpike, but you cannot distribute or copy the source code of the SpellSpike language.
+
 # 🥤 Ideal for everything and everyone
 Blackpard is broad, and can be used for everything, and by everyone. Blackpard's tight-knit and active community makes everything easy, and makes it easy for beginners.
 
