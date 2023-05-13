@@ -1,8 +1,10 @@
 import builtins
 import os
 
+
 def vlu(name, value):
     builtins.__dict__[name] = value
+
 
 currentMainFile = ""
 with open("package.spike", "r") as f:
@@ -12,7 +14,6 @@ with open("package.spike", "r") as f:
             break
 vlu("currentMainFile", currentMainFile)
 
- 
 with open(currentMainFile, "r") as f:
     for line in f:
         if "action" in line:
@@ -24,7 +25,6 @@ with open(currentMainFile, "r") as f:
                 code += line
             exec(f"def {name}():\n{code}")
 
-
 with open(currentMainFile, "r") as f:
     for line in f:
         if "sta" in line:
@@ -32,7 +32,7 @@ with open(currentMainFile, "r") as f:
             value = line.split()[1].split("(")[1].split(",")[1].replace('"', '')
             exec(f"{name.upper()} = '{value}'")
 
- 
+
 def play_audio(audio_name):
     with open(currentMainFile, "r") as f:
         for line in f:
@@ -51,6 +51,45 @@ def play_audio(audio_name):
                     os.system(f"afplay {audio_directory}")
                     break
 
+
 def stop_audio(audio_name):
     os.system(f"killall afplay -v {audio_name}")
+
+ 
+def BPDMath():
+    with open(currentMainFile, "r") as f:
+        for line in f:
+            if "BPDMath()" in line:
+                operations = []
+                for line in f:
+                    if ")" in line:
+                        operations.append(line)
+                    elif "}" in line:
+                        break
+                results = []
+                for operation in operations:
+                    operation = operation.replace("math", "")
+                    operation = operation.replace("(", "")
+                    operation = operation.replace(")", "")
+                    operation = operation.split(".")
+                    if operation[0] == "add":
+                        result = operation[1].split(" + ")
+                        result = int(result[0]) + int(result[1])
+                        results.append(f"{operation[1]} = {result}")
+                    elif operation[0] == "split":
+                        result = operation[1].split(" / ")
+                        result = int(result[0]) / int(result[1])
+                        results.append(f"{operation[1]} = {result}")
+                    elif operation[0] == "sub":
+                        result = operation[1].split(" - ")
+                        result = int(result[0]) - int(result[1])
+                        results.append(f"{operation[1]} = {result}")
+                    elif operation[0] == "multi":
+                        result = operation[1].split(" * ")
+                        result = int(result[0]) * int(result[1])
+                        results.append(f"{operation[1]} = {result}")
+                alert_text = "Operations Results (Blackpard Technology):\n"
+                for result in results:
+                    alert_text += f"{result};\n"
+                alert(alert_text)
 
