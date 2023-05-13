@@ -2,7 +2,7 @@
 ![Wesley Y](https://img.shields.io/badge/Created%20by%20One%20Man-Started%20when%20I%20was%2014%20years%20old-blue)
 ![Not open source](https://img.shields.io/badge/A%20100%25%20Brazilian%20language-But%20with%20English%20grammar%20and%20syntax-white)
 
-# 🐆 <img src="https://raw.githubusercontent.com/NervousGroove/Blackpard/main/Blackpard_45px.png" alt="Galath" width="20"/> Blackpard
+# <img src="https://raw.githubusercontent.com/NervousGroove/Blackpard/main/Blackpard_45px.png" alt="Galath" width="20"/> Blackpard
 Blackpard is a high-level, cross-platform programming language developed to bring a new language concept to the market. Blackpard was developed to compete with modern high-level languages such as Python. In addition to being extremely powerful, broad and lightweight, Blackpard is extremely easy to read, code and interpret.
 
 # ☕ Easy and Light
@@ -169,3 +169,9 @@ You can open URLs in the user's default browser. See:
 BPDOpenURL()
 vlu("setURL", "https://myurl.com")
 ```
+
+---> ALL RIGHTS RESERVED, SWANKYNOOB INC. | ESTABLISHED AND MANAGED BY Wesley YAN Soares Brehmer
+
+[This repository/project/program and all others from SwankyNoob apply to the developer's terms.](https://github.com/NervousGroove/SwankyNoob/blob/main/TERMS)
+
+<img src="https://raw.githubusercontent.com/NervousGroove/Blackpard/main/Blackpard_45px.png" alt="Galath" width="45"/>
