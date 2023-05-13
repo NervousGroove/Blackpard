@@ -24,7 +24,7 @@ Blackpard is broad, and can be used for everything, and by everyone. Blackpard's
 # 📦 How to Install
 It is extremely easy to install Blackpard on your device. To make the installation of our language, access the site of Blackpard in "https://shre.ink/blackpard", and click in "Download Latest Version", when clicking, you will be you will be able to choose the versions for your due operating system, after selecting the version, wait the download and run the installer (if you are using Windows), and complete all steps of the installer, after finishing the installer, you can already start using Blackpard. Blackpard will be installed in the folder you select in the installer, you must select the folder in which the project is located, if you select a directory that does not exist, it will be created. One of the files that are installed, is the "package.spike" file, in it there is all the configuration of your project, such as the app name, author name and the main file. The main file means the main ".bpd" file (Blackpard related file) of your project that will be executed when running the executable.
 
-## 🚀 Documentation
+# 🚀 Documentation
 
 ## ⚡ How to create variables
 Unlike other known languages, in Blackpard you can define variables using only the keyword "vlu" (short for "value"). It is quite simple to create variables in our language, just use the keyword, then the variable name and then the value. Here is an example:
