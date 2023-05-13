@@ -1,5 +1,18 @@
 import builtins
 import os
+import alert as alert
+from tkinter import *
+import logging
+from tkinter import messagebox
+
+root = Tk()
+root.title("Blackpard Program")
+root.geometry("300x200")
+
+label = Label(root, text="Blackpard v1.0.2")
+label.pack()
+
+root.mainloop()
 
 
 def vlu(name, value):
@@ -55,7 +68,7 @@ def play_audio(audio_name):
 def stop_audio(audio_name):
     os.system(f"killall afplay -v {audio_name}")
 
- 
+
 def BPDMath():
     with open(currentMainFile, "r") as f:
         for line in f:
@@ -91,5 +104,14 @@ def BPDMath():
                 alert_text = "Operations Results (Blackpard Technology):\n"
                 for result in results:
                     alert_text += f"{result};\n"
-                alert(alert_text)
+                messagebox.showinfo("Alert", alert_text)
 
+
+def execute_onstart_functions():
+    with open("onstart.cfg", "r") as f:
+        functions = f.read().split(",")
+        for function in functions:
+            exec(function.strip())
+
+
+execute_onstart_functions()
